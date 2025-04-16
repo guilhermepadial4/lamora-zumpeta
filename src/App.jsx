@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <h1>Lamora Zumpeta</h1>
+      <h1>Lumora Zumpeta</h1>
     </>
   );
 }
