@@ -63,8 +63,8 @@
       }
 
       &:nth-child(2) {
-        transform: translateY(-50%);
         top: 50%;
+        transform: translateY(-50%);
       }
 
       &:nth-child(3) {
@@ -110,8 +110,27 @@
   }
 
   @media (max-width: 768px) {
+    .logo {
+      height: 70px;
+    }
+
     .hamburger-button {
       display: block;
+
+      width: 24px;
+      height: 18px;
+
+      .bar {
+        height: 2px;
+      }
+
+      .bar.open:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+
+      .bar.open:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
     }
 
     .nav {
@@ -137,6 +156,10 @@
 
       &.mobile-open {
         transform: translateX(0);
+      }
+
+      a {
+        font-size: 1.2rem;
       }
     }
   }
