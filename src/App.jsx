@@ -1,27 +1,9 @@
-import './App.css';
-import LumoraLogo from './assets/lumora.svg';
-import { useState } from 'react';
+import { Header } from './components/header/Header';
 
-function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
+export function App() {
   return (
     <>
-      <header className="app-header">
-        <img src={LumoraLogo} alt="Lumora Logo" className="logo" />
-
-        <nav className={`nav-menu ${menuOpen ? 'open' : ''}`}>
-          <a href="#">Início</a>
-          <a href="#">Produtos</a>
-          <a href="#">Contato</a>
-        </nav>
-
-        <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
-          ☰
-        </button>
-      </header>
+      <Header />
     </>
   );
 }
-
-export default App;
