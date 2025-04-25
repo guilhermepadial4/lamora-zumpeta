@@ -1,3 +1,4 @@
+import { CTASection } from './ctaSection/CTASection';
 import { Features } from './features/Features';
 import { GuaranteeSection } from './guaranteeSection/GuaranteeSection';
 import { Hero } from './heroSection/Hero';
@@ -12,6 +13,7 @@ export function Home() {
       <HighlightSection />
       <TestimonialSection />
       <GuaranteeSection />
+      <CTASection />
     </>
   );
 }
