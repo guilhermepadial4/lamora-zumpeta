@@ -1,5 +1,7 @@
 import './footer.scss';
 import logo from '../../assets/logo.svg';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 export function Footer() {
   return (
@@ -61,7 +63,24 @@ export function Footer() {
             </ul>
           </div>
         </div>
+
+        <div className="footer-social">
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <FaInstagram size={24} />
+          </a>
+
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <FaFacebook size={24} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="X">
+            <FaXTwitter size={24} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
+            <FaLinkedin size={24} />
+          </a>
+        </div>
       </div>
+
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} Lumora Zunpeta. Todos os direitos reservados.</p>
       </div>
