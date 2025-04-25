@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import logo from '../../assets/logo.svg';
 
@@ -11,26 +12,32 @@ export function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="header-container">
-        <img src={logo} alt="Lumora Zunpeta" className="logo" />
+        <Link to="/" onClick={closeMenu}>
+          <img src={logo} alt="Lumora Zunpeta" className="logo" />
+        </Link>
         <button className="hamburger-button" onClick={toggleMenu}>
           <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
           <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
           <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
         </button>
         <nav className={`nav ${isMenuOpen ? 'mobile-open' : ''}`}>
-          <a href="#home" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/" onClick={closeMenu}>
             Início
-          </a>
-          <a href="#produtos" onClick={() => setIsMenuOpen(false)}>
+          </Link>
+          <Link to="/produtos" onClick={closeMenu}>
             Produtos
-          </a>
-          <a href="#sobre" onClick={() => setIsMenuOpen(false)}>
+          </Link>
+          <a href="#sobre" onClick={closeMenu}>
             Sobre
           </a>
-          <a href="#contato" onClick={() => setIsMenuOpen(false)}>
+          <a href="#contato" onClick={closeMenu}>
             Contato
           </a>
         </nav>
