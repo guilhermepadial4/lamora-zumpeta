@@ -18,15 +18,17 @@ const testimonials = [
     location: 'São Paulo, SP',
     avatar: Woman,
     alt: 'Depoimento de Carla Mendes, cliente satisfeita Lumora',
-    quote: 'Fiquei impressionada com a qualidade e desempenho do meu Zunpeta. O design é lindo e o custo-benefício não tem igual!',
+    quote:
+      'Fiquei impressionada com o desempenho do meu Lumora Edge Pro. O design é elegante e a carga rápida realmente faz diferença. O custo-benefício é incomparável!',
     rating: 5,
   },
   {
     name: 'Renato Alves',
     location: 'Belo Horizonte, MG',
     avatar: Men,
-    alt: 'Avaliação de Renato Alves sobre o atendimento Lumora',
-    quote: 'Atendimento excelente e entrega super rápida. A Lumora realmente se preocupa com o cliente!',
+    alt: 'Avaliação de Renato Alves sobre o atendito Lumora',
+    quote:
+      'Comprei o Lumora Zenith X e fiquei muito satisfeito com o atendimento e a entrega rápida. A bateria do meu celular nunca mais ficou no vermelho durante o dia!',
     rating: 5,
   },
   {
@@ -34,7 +36,8 @@ const testimonials = [
     location: 'Recife, PE',
     avatar: Woman2,
     alt: 'Opinião de Juliana Rocha sobre a potência do smartphone Lumora',
-    quote: 'O celular chegou em perfeito estado e é muito mais potente do que eu esperava. Recomendo demais!',
+    quote:
+      'O PowerMini 5000 chegou e me surpreendeu pela sua portabilidade. Eu realmente não esperava uma carga tão boa em um produto tão pequeno. Super recomendo para quem está sempre na correria!',
     rating: 4,
   },
   {
@@ -42,7 +45,8 @@ const testimonials = [
     location: 'Curitiba, PR',
     avatar: Men2,
     alt: 'Experiência de compra segura e tranquila de Thiago Costa na Lumora',
-    quote: 'Já comprei dois Zunpetas aqui pra mim e minha esposa. Nunca tive uma experiência tão tranquila e segura!',
+    quote:
+      'Já comprei dois SoundBuds Air e posso afirmar que o som é excelente para quem busca fones práticos e com boa qualidade. A entrega também foi super rápida e a experiência de compra, tranquila!',
     rating: 5,
   },
   {
@@ -50,7 +54,8 @@ const testimonials = [
     location: 'Fortaleza, CE',
     avatar: Woman3,
     alt: 'Review de Beatriz Farias destacando a bateria e as câmeras do Zunpeta',
-    quote: 'Simplesmente amei meu novo Zunpeta! Bateria durando muito e câmeras incríveis!',
+    quote:
+      'Amei o meu Lumora SoundWave X! A qualidade do som é incrível e o cancelamento de ruído é perfeito para o meu dia a dia. A bateria dura muito bem também. Definitivamente vale a pena!',
     rating: 5,
   },
 ];
