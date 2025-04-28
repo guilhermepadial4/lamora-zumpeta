@@ -1,5 +1,9 @@
-import './hero.scss';
+import { Link } from 'react-router-dom';
+
 import HeroImage from '../../../assets/img/phone.png';
+
+import './hero.scss';
+
 export function Hero() {
   return (
     <section className="hero">
@@ -12,9 +16,9 @@ export function Hero() {
           Design sofisticado, performance excepcional e a mais recente tecnologia mobile. Explore a coleção Lumora Zunpeta e eleve sua
           experiência.
         </p>
-        <a href="#celulares" className="hero-button">
+        <Link to="/produtos" className="hero-button">
           Conheça os Modelos
-        </a>
+        </Link>
       </div>
     </section>
   );
