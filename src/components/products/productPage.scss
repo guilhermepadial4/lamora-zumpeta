@@ -1,127 +1,133 @@
-/* Em productPage.scss */
-.product-list-page.minimalist-product-page {
-  background: #fff; /* Fundo branco */
-  padding: 3rem 1rem;
+.product-list-page.minimalist-vertical-page {
   font-family: 'Inter', sans-serif;
-  margin-top: 80px; /* Ajuste este valor para a altura do seu header */
+
+  background: #fff;
+
+  margin-top: 80px;
+
+  padding: 3rem 1rem;
 
   .container {
-    max-width: 1100px;
+    max-width: 1000px;
+
     margin: 0 auto;
-    text-align: center;
   }
 
   h1 {
     font-size: 2.5rem;
+    text-align: center;
     font-weight: 600;
-    color: #1d1d1f; /* Cinza escuro */
-    margin-bottom: 2rem;
     letter-spacing: -0.8px;
+    color: #1d1d1f;
+
+    margin-bottom: 2rem;
   }
 
-  .products-grid {
-    display: grid;
-    gap: 2.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-
-  .product-card-link {
-    text-decoration: none;
-    color: inherit; /* Herda a cor do texto para o link */
-    display: block; /* Faz o link ocupar todo o card */
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-
-    &:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
-    }
-  }
-
-  .product-card {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
-    padding: 2rem;
+  .products-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    gap: 2rem;
+
+    margin-top: 2rem;
   }
 
-  .product-image-container {
-    width: 180px; /* Aumentei o tamanho da imagem */
-    height: auto;
-    margin-bottom: 1.5rem;
+  .product-item {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 2rem;
 
-    img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain; /* Garante que a imagem caiba dentro do container */
-    }
-  }
+    text-decoration: none;
+    color: inherit;
 
-  .product-name {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: #222;
-    margin-bottom: 0.75rem;
-  }
+    border-bottom: 1px solid #eee;
 
-  .product-description {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 1.25rem;
-    line-height: 1.6;
-  }
+    padding: 1.5rem 0;
 
-  .product-price {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #7209b7;
-    margin-bottom: 1.5rem;
-  }
+    transition: background-color 0.2s ease-in-out;
 
-  /* Removi o botão e o link agora envolve todo o card */
-
-  /* Responsividade para telas menores */
-  @media (max-width: 768px) {
-    padding: 2rem 0.5rem;
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
+    &:last-child {
+      border-bottom: none;
     }
 
-    .products-grid {
-      gap: 1.5rem;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    &:hover {
+      background-color: #f9f9f9;
     }
 
-    .product-card {
-      padding: 1.5rem;
+    .product-image {
+      width: 150px;
+      height: auto;
+
+      img {
+        display: block;
+
+        max-width: 100%;
+        height: auto;
+      }
     }
 
-    .product-image-container {
-      width: 120px;
-      margin-bottom: 1rem;
+    .product-info {
+      flex-grow: 1;
+      text-align: left;
     }
 
     .product-name {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #222;
+
       margin-bottom: 0.5rem;
     }
 
     .product-description {
-      font-size: 0.9rem;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #666;
+
       margin-bottom: 1rem;
     }
 
     .product-price {
-      font-size: 1rem;
-      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+
+      color: #7209b7;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 100px;
+
+    padding: 2rem 0.5rem;
+
+    h1 {
+      font-size: 2rem;
+
+      margin-bottom: 1.5rem;
+    }
+
+    .products-list {
+      gap: 1.5rem;
+
+      margin-top: 1.5rem;
+    }
+
+    .product-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+
+      padding: 1rem 0;
+
+      .product-image {
+        width: 100%;
+        max-width: 200px;
+
+        margin: 0 auto;
+      }
+
+      .product-info {
+        text-align: center;
+      }
     }
   }
 }

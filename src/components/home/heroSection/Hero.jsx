@@ -1,5 +1,5 @@
 import './hero.scss';
-import HeroImage from '../../../assets/img/phone.jpg';
+import HeroImage from '../../../assets/img/phone.png';
 export function Hero() {
   return (
     <section className="hero">

@@ -1,8 +1,8 @@
 import './highlightSection.scss';
 
-import ZenithX from '../../../assets/img/zenithx.jpg';
-import ZenithP from '../../../assets/img/zenithp.jpg';
-import Edge from '../../../assets/img/edge.jpg';
+import ZenithX from '../../../assets/img/zenithx.png';
+import ZenithP from '../../../assets/img/zenithp.png';
+import EdgePro from '../../../assets/img/edgep.png';
 
 const phones = [
   {
@@ -23,7 +23,7 @@ const phones = [
   },
   {
     name: 'Lumora Edge Pro',
-    image: Edge,
+    image: EdgePro,
     alt: 'Smartphone de entrada premium Lumora Edge Pro com tela FHD+ de 90 Hz e câmera de 50MP com IA',
     description:
       'Entrada Premium com tela FHD+ de 90 Hz, câmera de 50MP com IA e bateria de 5000 mAh. A experiência Lumora com o melhor custo-benefício.',
