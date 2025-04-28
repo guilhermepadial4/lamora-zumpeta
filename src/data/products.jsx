@@ -66,7 +66,7 @@ export const products = [
 
   {
     id: 6,
-    name: 'Start 2',
+    name: 'Lumora Start 2',
     description: 'Desempenho ágil e tela nítida para tarefas do dia a dia.',
     price: '599',
     image: Start2,

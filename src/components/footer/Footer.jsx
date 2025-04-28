@@ -16,16 +16,56 @@ export function Footer() {
             <h4>Modelos</h4>
             <ul>
               <li>
-                <a href="#modelo1">Zunpeta X1</a>
+                <a href="#modelo1">Lumora Edge Pro</a>
               </li>
               <li>
-                <a href="#modelo2">Zunpeta Pro</a>
+                <a href="#modelo2">Lumora Zenith X Plus</a>
               </li>
               <li>
-                <a href="#modelo3">Zunpeta Air</a>
+                <a href="#modelo3">Lumora Zenith X</a>
               </li>
               <li>
-                <a href="#modelo4">Zunpeta Max</a>
+                <a href="#modelo4">Lumora Edge</a>
+              </li>
+
+              <li>
+                <a href="#modelo4">Lumora Core S</a>
+              </li>
+
+              <li>
+                <a href="#modelo4">Lumora Start 2</a>
+              </li>
+
+              <li>
+                <a href="#modelo4">Lumora Tab M10</a>
+              </li>
+
+              <li>
+                <a href="#modelo4">Lumora Tab X12 Pro</a>
+              </li>
+
+              <li>
+                <a href="#modelo4">Lumora Book E14</a>
+              </li>
+
+              <li>
+                <a href="#modelo4">Lumora Book M15</a>
+              </li>
+
+              <li>
+                <a href="#modelo4">Lumora Core X</a>
+              </li>
+
+              <li>
+                <a href="#modelo4">Headphone Lumora SoundWave X</a>
+              </li>
+
+              <li>
+                <a href="#modelo4">SoundBuds Air</a>
+              </li>
+
+              <li>
+                <a href="#modelo4">PowerMini 5000</a>
               </li>
             </ul>
           </div>
