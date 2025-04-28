@@ -22,6 +22,7 @@ export const products = [
     image: EdgePro,
     slug: 'lumora-edge-pro',
     category: 'celulares',
+    availableColors: ['prata'],
   },
 
   {
@@ -32,6 +33,7 @@ export const products = [
     image: ZenithPlus,
     slug: 'lumora-zenithx-plus',
     category: 'celulares',
+    availableColors: ['silver', 'platinum', 'golden-champagne'],
   },
 
   {
@@ -42,6 +44,7 @@ export const products = [
     image: ZenithX,
     slug: 'lumora-zenithx',
     category: 'celulares',
+    availableColors: ['prata-espacial', 'azul-colbato', 'rosa-rubi'],
   },
 
   {
@@ -52,6 +55,7 @@ export const products = [
     image: Edge,
     slug: 'lumora-edge',
     category: 'celulares',
+    availableColors: ['dourado'],
   },
 
   {
@@ -62,6 +66,7 @@ export const products = [
     image: CoreS,
     slug: 'lumora-core-s',
     category: 'celulares',
+    availableColors: ['black-titanum', 'blue-atlântic', 'golden-champagne'],
   },
 
   {
@@ -72,6 +77,7 @@ export const products = [
     image: Start2,
     slug: 'lumora-start-2',
     category: 'tablets',
+    availableColors: ['pink', 'preto-fosco', 'dourado'],
   },
 
   {
@@ -102,6 +108,7 @@ export const products = [
     image: BookE14,
     slug: 'lumora-book-e14',
     category: 'notebooks',
+    availableColors: ['rosê-gold', 'chumbo'],
   },
 
   {
@@ -112,6 +119,7 @@ export const products = [
     image: BookM15,
     slug: 'lumora-book-m15',
     category: 'notebooks',
+    availableColors: ['blue', 'gold', 'silver'],
   },
 
   {
