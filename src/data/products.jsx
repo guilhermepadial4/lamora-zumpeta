@@ -21,6 +21,7 @@ export const products = [
     price: '1199',
     image: EdgePro,
     slug: 'lumora-edge-pro',
+    category: 'celulares',
   },
 
   {
@@ -30,15 +31,17 @@ export const products = [
     price: '4999',
     image: ZenithPlus,
     slug: 'lumora-zenithx-plus',
+    category: 'celulares',
   },
 
   {
     id: 3,
-    name: 'Lumora Zenith X',
+    name: 'Lumora Zenith X',
     description: 'Desempenho de elite e câmeras poderosas em um design sofisticado.',
     price: '6499',
     image: ZenithX,
     slug: 'lumora-zenithx',
+    category: 'celulares',
   },
 
   {
@@ -48,6 +51,7 @@ export const products = [
     price: '799,99',
     image: Edge,
     slug: 'lumora-edge',
+    category: 'celulares',
   },
 
   {
@@ -57,6 +61,7 @@ export const products = [
     price: '1899',
     image: CoreS,
     slug: 'lumora-core-s',
+    category: 'celulares',
   },
 
   {
@@ -66,6 +71,7 @@ export const products = [
     price: '599',
     image: Start2,
     slug: 'lumora-start-2',
+    category: 'tablets',
   },
 
   {
@@ -75,6 +81,7 @@ export const products = [
     price: '1899',
     image: TabM10,
     slug: 'lumora-tab-m10',
+    category: 'tablets',
   },
 
   {
@@ -84,6 +91,7 @@ export const products = [
     price: '3699',
     image: TabX12Pro,
     slug: 'lumora-tab-x12-pro',
+    category: 'tablets',
   },
 
   {
@@ -93,6 +101,7 @@ export const products = [
     price: '3599',
     image: BookE14,
     slug: 'lumora-book-e14',
+    category: 'notebooks',
   },
 
   {
@@ -102,6 +111,7 @@ export const products = [
     price: '4899',
     image: BookM15,
     slug: 'lumora-book-m15',
+    category: 'notebooks',
   },
 
   {
@@ -111,6 +121,7 @@ export const products = [
     price: '6299',
     image: CoreX,
     slug: 'lumora-core-x',
+    category: 'notebooks',
   },
 
   {
@@ -120,6 +131,7 @@ export const products = [
     price: '1199',
     image: Sound,
     slug: 'headphone-lumora-soundwave-x',
+    category: 'acessorios',
   },
 
   {
@@ -129,6 +141,7 @@ export const products = [
     price: '1699',
     image: Buds,
     slug: 'soundbuds-air',
+    category: 'acessorios',
   },
 
   {
@@ -138,5 +151,6 @@ export const products = [
     price: '1399',
     image: Power,
     slug: 'powermini-5000',
+    category: 'acessorios',
   },
 ];
