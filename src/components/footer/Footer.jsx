@@ -133,7 +133,7 @@ export function Footer() {
               <Link to="/contato">Suporte</Link>
               </li>
               <li>
-                <a href="#faq">FAQ</a>
+              <Link to="/faq">FAQ</Link>
               </li>
             </ul>
           </div>

@@ -5,6 +5,7 @@ import { ProductDetailsPage } from './components/products/productDetails/product
 import { About } from './components/about/about';
 import { Contact } from './components/contact/contact';
 import { Guarantee } from './components/guarantee/guarantee';
+import { Faq } from './components/faq/faq';
 
 export function AppRoutes() {
   return (
@@ -15,6 +16,7 @@ export function AppRoutes() {
       <Route path="/sobre" element={<About />} />
       <Route path="/contato" element={<Contact />} />
       <Route path="/garantia" element={<Guarantee />} />
+      <Route path="/faq" element={<Faq />} />
     </Routes>
   );
 }
