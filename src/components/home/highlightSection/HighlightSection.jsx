@@ -11,7 +11,7 @@ const phones = [
     alt: 'Smartphone premium Lumora Zenith X com tela AMOLED LTPO e câmera tripla com IA',
     description:
       'Desempenho Snapdragon 8 Gen 3, tela AMOLED LTPO QHD+ de 120 Hz e câmera tripla de 50MP com IA. Experimente a velocidade e a qualidade visual.',
-    link: '/lumora-z1',
+    link: 'produto/lumora-zenithx',
   },
   {
     name: 'Lumora Zenith X Plus',
@@ -19,7 +19,7 @@ const phones = [
     alt: 'Smartphone ultra premium Lumora Zenith X Plus com câmera ZEISS de 200MP e tela AMOLED LTPO 2.0 de 144 Hz',
     description:
       'Ultra Premium com câmeras ZEISS de 200MP, tela AMOLED LTPO 2.0 de 144 Hz e carregamento de 100W. O máximo em tecnologia e design.',
-    link: '/lumora-z2',
+    link: 'produto/lumora-zenithx-plus',
   },
   {
     name: 'Lumora Edge Pro',
@@ -27,7 +27,7 @@ const phones = [
     alt: 'Smartphone de entrada premium Lumora Edge Pro com tela FHD+ de 90 Hz e câmera de 50MP com IA',
     description:
       'Entrada Premium com tela FHD+ de 90 Hz, câmera de 50MP com IA e bateria de 5000 mAh. A experiência Lumora com o melhor custo-benefício.',
-    link: '/lumora-z3-ultra',
+    link: 'produto/lumora-edge-pro',
   },
 ];
 

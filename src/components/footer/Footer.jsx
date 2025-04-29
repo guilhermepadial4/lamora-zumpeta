@@ -127,13 +127,13 @@ export function Footer() {
                 <Link to="/sobre">Sobre a Lumora</Link>
               </li>
               <li>
-              <Link to="/garantia">Garantia</Link>
+                <Link to="/garantia">Garantia</Link>
               </li>
               <li>
-              <Link to="/contato">Suporte</Link>
+                <Link to="/contato">Suporte</Link>
               </li>
               <li>
-              <Link to="/faq">FAQ</Link>
+                <Link to="/faq">FAQ</Link>
               </li>
             </ul>
           </div>
@@ -145,17 +145,17 @@ export function Footer() {
                 <a href="mailto:contato@lumora.com">contato@lumora.com</a>
               </li>
               <li>
-              <Link to="/termos">Termos e Condições</Link>
+                <Link to="/termos">Termos e Condições</Link>
               </li>
               <li>
-              <Link to="/privacidade">Política de Privacidade</Link>
+                <Link to="/privacidade">Política de Privacidade</Link>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="footer-social">
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a href="https://www.instagram.com/lumora.zumpeta/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <FaInstagram size={24} />
           </a>
 
