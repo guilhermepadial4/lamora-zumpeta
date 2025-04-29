@@ -124,13 +124,13 @@ export function Footer() {
             <h4>Institucional</h4>
             <ul>
               <li>
-                <a href="#sobre">Sobre a Lumora</a>
+                <Link to="/sobre">Sobre a Lumora</Link>
               </li>
               <li>
-                <a href="#garantia">Garantia</a>
+              <Link to="/garantia">Garantia</Link>
               </li>
               <li>
-                <a href="#suporte">Suporte</a>
+              <Link to="/contato">Suporte</Link>
               </li>
               <li>
                 <a href="#faq">FAQ</a>
