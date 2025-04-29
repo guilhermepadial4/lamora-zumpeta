@@ -7,6 +7,7 @@ import { Contact } from './components/contact/contact';
 import { Guarantee } from './components/guarantee/guarantee';
 import { Faq } from './components/faq/faq';
 import { Terms } from './components/terms/terms';
+import { Privacy } from './components/privacy/privacy';
 
 export function AppRoutes() {
   return (
@@ -19,6 +20,7 @@ export function AppRoutes() {
       <Route path="/garantia" element={<Guarantee />} />
       <Route path="/faq" element={<Faq />} />
       <Route path="/termos" element={<Terms />} />
+      <Route path="/privacidade" element={<Privacy />} />
     </Routes>
   );
 }

@@ -148,7 +148,7 @@ export function Footer() {
               <Link to="/termos">Termos e Condições</Link>
               </li>
               <li>
-                <a href="#">Política de Privacidade</a>
+              <Link to="/privacidade">Política de Privacidade</Link>
               </li>
             </ul>
           </div>
