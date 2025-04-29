@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
 import './footer.scss';
 import logo from '../../assets/logo.svg';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import { products } from '../../data/products';
 
 export function Footer() {
   return (
@@ -16,56 +18,104 @@ export function Footer() {
             <h4>Modelos</h4>
             <ul>
               <li>
-                <a href="#modelo1">Lumora Edge Pro</a>
+                {products.find((p) => p.name === 'Lumora Edge Pro') ? (
+                  <Link to={`/produto/${products.find((p) => p.name === 'Lumora Edge Pro')?.slug}`}>Lumora Edge Pro</Link>
+                ) : (
+                  <a href="#modelo1">Lumora Edge Pro</a>
+                )}
               </li>
               <li>
-                <a href="#modelo2">Lumora Zenith X Plus</a>
+                {products.find((p) => p.name === 'Lumora Zenith X Plus') ? (
+                  <Link to={`/produto/${products.find((p) => p.name === 'Lumora Zenith X Plus')?.slug}`}>Lumora Zenith X Plus</Link>
+                ) : (
+                  <a href="#modelo2">Lumora Zenith X Plus</a>
+                )}
               </li>
               <li>
-                <a href="#modelo3">Lumora Zenith X</a>
+                {products.find((p) => p.name === 'Lumora Zenith X') ? (
+                  <Link to={`/produto/${products.find((p) => p.name === 'Lumora Zenith X')?.slug}`}>Lumora Zenith X</Link>
+                ) : (
+                  <a href="#modelo3">Lumora Zenith X</a>
+                )}
               </li>
               <li>
-                <a href="#modelo4">Lumora Edge</a>
+                {products.find((p) => p.name === 'Lumora Edge') ? (
+                  <Link to={`/produto/${products.find((p) => p.name === 'Lumora Edge')?.slug}`}>Lumora Edge</Link>
+                ) : (
+                  <a href="#modelo4">Lumora Edge</a>
+                )}
               </li>
-
               <li>
-                <a href="#modelo4">Lumora Core S</a>
+                {products.find((p) => p.name === 'Lumora Core S') ? (
+                  <Link to={`/produto/${products.find((p) => p.name === 'Lumora Core S')?.slug}`}>Lumora Core S</Link>
+                ) : (
+                  <a href="#modelo4">Lumora Core S</a>
+                )}
               </li>
-
               <li>
-                <a href="#modelo4">Lumora Start 2</a>
+                {products.find((p) => p.name === 'Lumora Start 2') ? (
+                  <Link to={`/produto/${products.find((p) => p.name === 'Lumora Start 2')?.slug}`}>Lumora Start 2</Link>
+                ) : (
+                  <a href="#modelo4">Lumora Start 2</a>
+                )}
               </li>
-
               <li>
-                <a href="#modelo4">Lumora Tab M10</a>
+                {products.find((p) => p.name === 'Lumora Tab M10') ? (
+                  <Link to={`/produto/${products.find((p) => p.name === 'Lumora Tab M10')?.slug}`}>Lumora Tab M10</Link>
+                ) : (
+                  <a href="#modelo4">Lumora Tab M10</a>
+                )}
               </li>
-
               <li>
-                <a href="#modelo4">Lumora Tab X12 Pro</a>
+                {products.find((p) => p.name === 'Lumora Tab X12 Pro') ? (
+                  <Link to={`/produto/${products.find((p) => p.name === 'Lumora Tab X12 Pro')?.slug}`}>Lumora Tab X12 Pro</Link>
+                ) : (
+                  <a href="#modelo4">Lumora Tab X12 Pro</a>
+                )}
               </li>
-
               <li>
-                <a href="#modelo4">Lumora Book E14</a>
+                {products.find((p) => p.name === 'Lumora Book E14') ? (
+                  <Link to={`/produto/${products.find((p) => p.name === 'Lumora Book E14')?.slug}`}>Lumora Book E14</Link>
+                ) : (
+                  <a href="#modelo4">Lumora Book E14</a>
+                )}
               </li>
-
               <li>
-                <a href="#modelo4">Lumora Book M15</a>
+                {products.find((p) => p.name === 'Lumora Book M15') ? (
+                  <Link to={`/produto/${products.find((p) => p.name === 'Lumora Book M15')?.slug}`}>Lumora Book M15</Link>
+                ) : (
+                  <a href="#modelo4">Lumora Book M15</a>
+                )}
               </li>
-
               <li>
-                <a href="#modelo4">Lumora Core X</a>
+                {products.find((p) => p.name === 'Lumora Core X') ? (
+                  <Link to={`/produto/${products.find((p) => p.name === 'Lumora Core X')?.slug}`}>Lumora Core X</Link>
+                ) : (
+                  <a href="#modelo4">Lumora Core X</a>
+                )}
               </li>
-
               <li>
-                <a href="#modelo4">Headphone Lumora SoundWave X</a>
+                {products.find((p) => p.name === 'Headphone Lumora SoundWave X') ? (
+                  <Link to={`/produto/${products.find((p) => p.name === 'Headphone Lumora SoundWave X')?.slug}`}>
+                    Headphone Lumora SoundWave X
+                  </Link>
+                ) : (
+                  <a href="#modelo4">Headphone Lumora SoundWave X</a>
+                )}
               </li>
-
               <li>
-                <a href="#modelo4">SoundBuds Air</a>
+                {products.find((p) => p.name === 'SoundBuds Air') ? (
+                  <Link to={`/produto/${products.find((p) => p.name === 'SoundBuds Air')?.slug}`}>SoundBuds Air</Link>
+                ) : (
+                  <a href="#modelo4">SoundBuds Air</a>
+                )}
               </li>
-
               <li>
-                <a href="#modelo4">PowerMini 5000</a>
+                {products.find((p) => p.name === 'PowerMini 5000') ? (
+                  <Link to={`/produto/${products.find((p) => p.name === 'PowerMini 5000')?.slug}`}>PowerMini 5000</Link>
+                ) : (
+                  <a href="#modelo4">PowerMini 5000</a>
+                )}
               </li>
             </ul>
           </div>
