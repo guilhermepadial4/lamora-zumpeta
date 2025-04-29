@@ -37,9 +37,9 @@ export function Header() {
           <Link to="/sobre" onClick={closeMenu}>
             Sobre
           </Link>
-          <a href="#contato" onClick={closeMenu}>
+          <Link to="/contato" onClick={closeMenu}>
             Contato
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
