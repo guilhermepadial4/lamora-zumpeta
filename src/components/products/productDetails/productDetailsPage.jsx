@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { products } from '../../../data/products'; // Importe seus dados de produtos
+import { products } from '../../../data/products';
 import { Header } from '../../header/Header';
 import { Footer } from '../../footer/Footer';
 import './productDetailsPage.scss';
 
 export function ProductDetailsPage() {
-  const { slug } = useParams(); // Obtém o 'slug' da URL
-  const [selectedColor, setSelectedColor] = useState('#ffffff'); // Estado inicial para a cor branca
+  const { slug } = useParams();
+  const [selectedColor, setSelectedColor] = useState('');
+  const [product, setProduct] = useState(null);
 
-  // Encontra o produto correspondente com base no slug
-  const product = products.find((p) => p.slug === slug);
+  useEffect(() => {
+    const foundProduct = products.find((p) => p.slug === slug);
+    setProduct(foundProduct);
+    if (foundProduct && foundProduct.availableColors && foundProduct.availableColors.length > 0) {
+      setSelectedColor(foundProduct.availableColors[0].value);
+    }
+  }, [slug]);
 
-  // Lida com o caso em que o produto não é encontrado
   if (!product) {
     return (
       <>
@@ -28,7 +33,6 @@ export function ProductDetailsPage() {
 
   const handleColorChange = (event) => {
     setSelectedColor(event.target.value);
-    // Aqui você pode adicionar lógica para atualizar a imagem do produto com a cor selecionada, se tiver essa funcionalidade.
   };
 
   return (
@@ -40,25 +44,36 @@ export function ProductDetailsPage() {
         </div>
         <div className="product-info">
           <h1 className="product-title">{product.name}</h1>
-          <p className="product-description">{product.completeDescription}</p>
+          <p className="product-description" dangerouslySetInnerHTML={{ __html: product.completeDescription }}></p>
           <span className="product-price">R$ {product.price}</span>
 
           <div className="product-options">
-            <div className="color-selector">
-              <label htmlFor="colorInput">Cor:</label>
-              <input
-                type="color"
-                id="colorInput"
-                value={selectedColor}
-                onChange={handleColorChange}
-              />
-              <span className="selected-color-display" style={{ backgroundColor: selectedColor }}>{selectedColor}</span>
-            </div>
-            {/* Outras opções de produto (tamanho, etc.) podem vir aqui */}
+            {product.availableColors && product.availableColors.length > 0 && (
+              <div className="color-selector">
+                <label>Cores Disponíveis:</label>
+                <div className="color-inputs">
+                  {product.availableColors.map((colorOption) => (
+                    <div key={colorOption.value} className="color-option">
+                      <input
+                        type="radio"
+                        name="color"
+                        value={colorOption.value}
+                        id={`color-${colorOption.name}`}
+                        checked={selectedColor === colorOption.value}
+                        onChange={handleColorChange}
+                        className="color-input"
+                        style={{ backgroundColor: colorOption.value }}
+                      />
+                      <label htmlFor={`color-${colorOption.name}`}>{colorOption.name}</label>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           <div className="product-actions">
-            <button className="add-to-cart-button">Adicionar ao Carrinho</button>
+          <button className="add-to-cart-button">Adicionar ao Carrinho</button>
           </div>
         </div>
       </div>
