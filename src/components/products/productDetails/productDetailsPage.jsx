@@ -40,7 +40,7 @@ export function ProductDetailsPage() {
         </div>
         <div className="product-info">
           <h1 className="product-title">{product.name}</h1>
-          <p className="product-description">{product.description}</p>
+          <p className="product-description">{product.completeDescription}</p>
           <span className="product-price">R$ {product.price}</span>
 
           <div className="product-options">
