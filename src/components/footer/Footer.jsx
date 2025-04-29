@@ -145,7 +145,7 @@ export function Footer() {
                 <a href="mailto:contato@lumora.com">contato@lumora.com</a>
               </li>
               <li>
-                <a href="#">Termos de Uso</a>
+              <Link to="/termos">Termos e Condições</Link>
               </li>
               <li>
                 <a href="#">Política de Privacidade</a>
