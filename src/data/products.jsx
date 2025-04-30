@@ -2,12 +2,22 @@ import EdgePro from '../assets/img/edgep.png';
 import Edge from '../assets/img/edge.png';
 import ZenithPlus from '../assets/img/zenithp.png';
 import ZenithX from '../assets/img/zenithx.png';
+import ZenithXSilver from '../assets/img/zenithxsilver.png';
+import ZenithXBlue from '../assets/img/zenithxblue.png';
+import ZenithPlusGold from '../assets/img/zenithpgold.png';
 import CoreS from '../assets/img/core-s.png';
+import CoreSBlue from '../assets/img/core-sblue.png';
+import CoreSGold from '../assets/img/core-sgold.png';
 import Start2 from '../assets/img/start.png';
+import Start2Pink from '../assets/img/startpink.png';
+import Start2Gold from '../assets/img/startgold.png';
 import TabM10 from '../assets/img/tabm10.png';
 import TabX12Pro from '../assets/img/tabx12pro.png';
 import BookE14 from '../assets/img/booke14.png';
+import BookE14Rose from '../assets/img/booke14rose.png';
 import BookM15 from '../assets/img/bookm15.png';
+import BookM15Gold from '../assets/img/bookm15gold.png';
+import BookM15Silver from '../assets/img/bookm15silver.png';
 import CoreX from '../assets/img/corex.png';
 import Sound from '../assets/img/sound.png';
 import Buds from '../assets/img/buds.png';
@@ -130,8 +140,8 @@ export const products = [
     slug: 'lumora-zenithx-plus',
     category: 'celulares',
     availableColors: [
-      { name: 'Silver Platinum', value: '#E5E4E2' },
-      { name: 'Golden Champagne', value: '#F7E7CE' },
+      { name: 'Silver Platinum', value: '#E5E4E2', image: ZenithPlus },
+      { name: 'Golden Champagne', value: '#F7E7CE', image: ZenithPlusGold },
     ],
   },
 
@@ -194,9 +204,9 @@ export const products = [
     slug: 'lumora-zenithx',
     category: 'celulares',
     availableColors: [
-      { name: 'Space Silver', value: '#4B4B4B' },
-      { name: 'Cobalt Blue', value: '#0047AB' },
-      { name: 'Ruby Pink', value: '#E0115F' },
+      { name: 'Space Silver', value: '#4B4B4B', image: ZenithXSilver },
+      { name: 'Cobalt Blue', value: '#0047AB', image: ZenithXBlue },
+      { name: 'Ruby Pink', value: '#E0115F', image: ZenithX },
     ],
   },
 
@@ -290,9 +300,9 @@ export const products = [
     slug: 'lumora-core-s',
     category: 'celulares',
     availableColors: [
-      { name: 'Black Titanium', value: '#1C1C1E' },
-      { name: 'Blue Atlântic', value: '#0A3D62' },
-      { name: 'Golden Champagne', value: '#ECD9B0' },
+      { name: 'Black Titanium', value: '#1C1C1E', image: CoreS },
+      { name: 'Blue Atlântic', value: '#0A3D62', image: CoreSBlue },
+      { name: 'Golden Champagne', value: '#ECD9B0', image: CoreSGold },
     ],
   },
 
@@ -340,9 +350,9 @@ export const products = [
     slug: 'lumora-start-2',
     category: 'tablets',
     availableColors: [
-      { name: 'Pink', value: '#FFC0CB' },
-      { name: 'Matte Black', value: '#1C1C1C' },
-      { name: 'Gold', value: '#FFD700' },
+      { name: 'Pink', value: '#FFC0CB', image: Start2Pink },
+      { name: 'Matte Black', value: '#1C1C1C', image: Start2 },
+      { name: 'Gold', value: '#FFD700', image: Start2Gold },
     ],
   },
 
@@ -492,8 +502,16 @@ export const products = [
     slug: 'lumora-book-e14',
     category: 'notebooks',
     availableColors: [
-      { name: 'Rose Gold', value: '#B76E79' },
-      { name: 'Charcoal', value: '#36454F' },
+      {
+        name: 'Rose Gold',
+        value: '#B76E79',
+        image: BookE14Rose,
+      },
+      {
+        name: 'Charcoal',
+        value: '#36454F',
+        image: BookE14,
+      },
     ],
   },
 
@@ -547,9 +565,9 @@ export const products = [
     slug: 'lumora-book-m15',
     category: 'notebooks',
     availableColors: [
-      { name: 'Blue', value: '#007BFF' },
-      { name: 'Gold', value: '#FFD700' },
-      { name: 'Silver', value: '#C0C0C0' },
+      { name: 'Blue', value: '#007BFF', image: BookM15 },
+      { name: 'Gold', value: '#FFD700', image: BookM15Gold },
+      { name: 'Silver', value: '#C0C0C0', image: BookM15Silver },
     ],
   },
 

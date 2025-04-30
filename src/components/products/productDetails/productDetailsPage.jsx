@@ -7,16 +7,21 @@ import './productDetailsPage.scss';
 
 export function ProductDetailsPage() {
   const { slug } = useParams();
-  const [selectedColor, setSelectedColor] = useState('');
+  const [selectedColor, setSelectedColor] = useState(null);
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
     const foundProduct = products.find((p) => p.slug === slug);
     setProduct(foundProduct);
-    if (foundProduct && foundProduct.availableColors && foundProduct.availableColors.length > 0) {
-      setSelectedColor(foundProduct.availableColors[0].value);
+    if (foundProduct?.availableColors?.length) {
+      setSelectedColor(foundProduct.availableColors[0]);
     }
   }, [slug]);
+
+  const handleColorChange = (event) => {
+    const chosenColor = product.availableColors.find((color) => color.value === event.target.value);
+    setSelectedColor(chosenColor);
+  };
 
   if (!product) {
     return (
@@ -31,16 +36,12 @@ export function ProductDetailsPage() {
     );
   }
 
-  const handleColorChange = (event) => {
-    setSelectedColor(event.target.value);
-  };
-
   return (
     <>
       <Header />
       <div className="product-details-page container">
         <div className="product-gallery">
-          <img src={product.image} alt={product.name} className="main-image" />
+          <img src={selectedColor?.image || product.image} alt={product.name} className="main-image" />
         </div>
         <div className="product-info">
           <h1 className="product-title">{product.name}</h1>
@@ -48,7 +49,7 @@ export function ProductDetailsPage() {
           <span className="product-price">R$ {product.price}</span>
 
           <div className="product-options">
-            {product.availableColors && product.availableColors.length > 0 && (
+            {product.availableColors?.length > 0 && (
               <div className="color-selector">
                 <label>Cores Disponíveis:</label>
                 <div className="color-inputs">
@@ -59,7 +60,7 @@ export function ProductDetailsPage() {
                         name="color"
                         value={colorOption.value}
                         id={`color-${colorOption.name}`}
-                        checked={selectedColor === colorOption.value}
+                        checked={selectedColor?.value === colorOption.value}
                         onChange={handleColorChange}
                         className="color-input"
                         style={{ backgroundColor: colorOption.value }}
@@ -73,7 +74,7 @@ export function ProductDetailsPage() {
           </div>
 
           <div className="product-actions">
-          <button className="add-to-cart-button">Adicionar ao Carrinho</button>
+            <button className="add-to-cart-button">Adicionar ao Carrinho</button>
           </div>
         </div>
       </div>
