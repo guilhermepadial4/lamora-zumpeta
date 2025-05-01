@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import HeroImage from '../../../assets/img/phone.png';
+import HeroImage from '../../../assets/img/phone.webp';
 
 import './hero.scss';
 
@@ -12,7 +12,7 @@ export function Hero() {
           src={HeroImage}
           alt="Dois smartphones flutuando com design minimalista e tela vibrante "
           className="hero-background-image"
-          loading="lazy"
+          loading="eager"
         />
       </div>
       <div className="hero-content">

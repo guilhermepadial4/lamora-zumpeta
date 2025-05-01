@@ -6,11 +6,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import Woman from '../../../assets/img/testimonials/woman.jpg';
-import Woman2 from '../../../assets/img/testimonials/woman2.jpg';
-import Woman3 from '../../../assets/img/testimonials/woman3.jpg';
-import Men from '../../../assets/img/testimonials/men.jpg';
-import Men2 from '../../../assets/img/testimonials/men2.jpg';
+import Woman from '../../../assets/img/testimonials/woman.webp';
+import Woman2 from '../../../assets/img/testimonials/woman2.webp';
+import Woman3 from '../../../assets/img/testimonials/woman3.webp';
+import Men from '../../../assets/img/testimonials/men.webp';
+import Men2 from '../../../assets/img/testimonials/men2.webp';
 
 const testimonials = [
   {

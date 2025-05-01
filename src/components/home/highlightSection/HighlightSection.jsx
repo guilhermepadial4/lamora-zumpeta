@@ -1,8 +1,8 @@
 import './highlightSection.scss';
 
-import ZenithX from '../../../assets/img/zenithx.png';
-import ZenithP from '../../../assets/img/zenithp.png';
-import EdgePro from '../../../assets/img/edgep.png';
+import ZenithX from '../../../assets/img/zenithx.webp';
+import ZenithP from '../../../assets/img/zenithp.webp';
+import EdgePro from '../../../assets/img/edgep.webp';
 
 const phones = [
   {
