@@ -13,13 +13,19 @@
     <!-- Verificação Google -->
     <meta name="google-site-verification" content="CEfmSGmcoHeR4sXG9ngqmGmt9fM7yxm9UxU9qbXTaBI" />
 
-    <!-- Fonte Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preload da fonte Inter para performance -->
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      />
+    </noscript>
 
     <!-- Open Graph (para redes sociais e Google) -->
     <meta property="og:title" content="Lumora Zunpeta" />
@@ -31,7 +37,8 @@
     <meta property="og:url" content="https://lumorazunpeta.vercel.app/" />
     <meta property="og:image" content="https://lumorazunpeta.vercel.app/og-image.png" />
 
-    <link rel="icon" href="./public/favicon.ico" />
+    <!-- Favicon (corrigido) -->
+    <link rel="icon" href="/favicon.ico" />
   </head>
   <body>
     <div id="root"></div>
