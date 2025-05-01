@@ -20,7 +20,7 @@ export function Header() {
     <header className="header">
       <div className="header-container">
         <Link to="/" onClick={closeMenu}>
-          <img src={logo} alt="Lumora Zunpeta" className="logo" />
+          <img src={logo} alt="Lumora Zunpeta" className="logo" loading="lazy" />
         </Link>
         <button className="hamburger-button" onClick={toggleMenu}>
           <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>

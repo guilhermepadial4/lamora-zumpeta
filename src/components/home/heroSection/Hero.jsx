@@ -8,7 +8,12 @@ export function Hero() {
   return (
     <section className="hero">
       <div className="hero-image-container">
-        <img src={HeroImage} alt="Dois smartphones flutuando com design minimalista e tela vibrante" className="hero-background-image" />
+        <img
+          src={HeroImage}
+          alt="Dois smartphones flutuando com design minimalista e tela vibrante "
+          className="hero-background-image"
+          loading="lazy"
+        />
       </div>
       <div className="hero-content">
         <h1>Descubra a Elegância e Inovação dos Novos Smartphones</h1>

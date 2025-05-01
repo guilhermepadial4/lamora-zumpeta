@@ -41,7 +41,7 @@ export function ProductDetailsPage() {
       <Header />
       <div className="product-details-page container">
         <div className="product-gallery">
-          <img src={selectedColor?.image || product.image} alt={product.name} className="main-image" />
+          <img src={selectedColor?.image || product.image} alt={product.name} className="main-image" loading="lazy"/>
         </div>
         <div className="product-info">
           <h1 className="product-title">{product.name}</h1>

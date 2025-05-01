@@ -43,7 +43,7 @@ export function HighlightSection() {
         {phones.map((phone) => (
           <a href={phone.link} className="phone-card" key={phone.name} aria-label={`Saiba mais sobre o ${phone.name}`}>
             <div className="image-container">
-              <img src={phone.image} alt={phone.alt} />
+              <img src={phone.image} alt={phone.alt} loading="lazy" />
             </div>
             <h3>{phone.name}</h3>
             <p className="short-description">{phone.description}</p>

@@ -10,7 +10,7 @@ export function Footer() {
     <footer className="footer premium-minimal-dark">
       <div className="footer-container">
         <div className="footer-logo">
-          <img src={logo} alt="Logo Lumora Zunpeta" />
+          <img src={logo} alt="Logo Lumora Zunpeta" loading="lazy" />
         </div>
 
         <div className="footer-links">
