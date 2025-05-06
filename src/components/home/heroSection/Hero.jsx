@@ -15,7 +15,8 @@ export function Hero() {
         />
       </div>
       <div className="hero-content">
-        <h1 id="hero-heading">Smartphones com Inovação e Design Premium</h1>
+        <h1 id="hero-heading">Lumora Zunpeta — A Nova Geração de Smartphones Premium</h1>
+
         <p>Conheça a nova geração Lumora Zunpeta: performance de ponta com um visual elegante e moderno.</p>
         <Link to="/produtos" className="hero-button">
           Conheça os Modelos
